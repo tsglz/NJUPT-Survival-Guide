@@ -4,8 +4,8 @@
 
 ## 快速开始开发
 ```bash
-git clone <repo-url>
-cd astro-test
+git clone https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide.git
+cd NJUPT-Survival-Guide
 npm install
 npm run dev
 ```
