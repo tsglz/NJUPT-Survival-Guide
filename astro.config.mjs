@@ -4,6 +4,13 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+
+	vite: {
+		define: {
+			__APP_VERSION__: JSON.stringify(process.env.npm_package_version)
+		}
+	},
+
 	site: 'https://njupt-navi.github.io',
 	integrations: [
 		starlight({
