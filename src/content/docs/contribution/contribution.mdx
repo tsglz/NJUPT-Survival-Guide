@@ -1,0 +1,37 @@
+---
+title: 如何为本项目贡献
+description: 贡献本指南的方式与流程说明
+---
+
+#### 需要准备什么？
+
+:::note[需要准备的工具]
+- npm
+- Git (GitHub 账号)
+- IDE (推荐 VSCode)
+- 一些耐心和热情
+:::
+
+:::tip[需要了解的知识]
+- Git 协作管理项目
+- Markdown 语法
+- 项目开发规范
+:::
+
+### 本地如何开发
+- 请参考`README.md` 中[快速开始](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B%E5%BC%80%E5%8F%91)完成在本地的部署
+- `Markdown`的语法非常简单，推荐查看[Markdown 教程](https://markdown.com.cn/)
+- `Astro + starlight`的扩展语法请参考[starlight 文档](https://starlight.astro.build/zh-cn/guides/authoring-content/)
+- 合理使用`AI`工具可以帮助你快速理解项目和编写内容。
+
+### 如何提交贡献
+1. 分支修改请勿在`main`分支上进行，请签出新的开发分支上进行修改，然后申请`Pull Request`，如果你有权限可以直接创建新分支，如果没有权限请先`Fork`本项目到你的账号下，然后在你的账号下创建新分支
+2. 编写你的修改
+3. 在`commit message`中请简要描述你的修改内容，你可以参考我们之前的信息。
+    :::note[格式规范]
+    请遵循[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)规范，原因在于我们使用[semantic-release](https://github.com/semantic-release/semantic-release)来自动化版本管理，需要依赖规范的`commit message`来生成版本号。
+
+    这里推荐使用[git cc](https://github.com/SKalt/git-cc)这个工具来帮助你生成提交信息。
+    :::
+4. 提交你的修改并推送，然后发起`Pull Request`
+5. 等待合作者进行内容审查，审查通过后会合并你的修改

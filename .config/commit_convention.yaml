@@ -17,3 +17,4 @@ scopes:
   - GitHub Action: GitHub 工作流
   - Astro Config: Astro 配置
   - Scripts: 脚本
+  - Docs: 文档

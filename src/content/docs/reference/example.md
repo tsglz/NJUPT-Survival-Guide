@@ -3,7 +3,6 @@ title: Example Reference
 description: A reference page in my new Starlight docs site.
 ---
 
-当前站点版本：`__APP_VERSION__`
 
 测试
 Reference pages are ideal for outlining how things work in terse and clear terms.

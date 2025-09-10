@@ -32,6 +32,10 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+				{
+					label: '如何贡献',
+					autogenerate: { directory: 'contribution' },
+				},
 			],
 		}),
 	],
