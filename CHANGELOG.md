@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.0.1...v1.0.2) (2025-09-10)
+
+
+### Bug Fixes
+
+* **GitHub Action:** fix the scripts ([dd6242c](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/dd6242cb7846d145ee476ee158954571edbcc306))
+
 ## [1.0.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.0.0...v1.0.1) (2025-09-10)
 
 
