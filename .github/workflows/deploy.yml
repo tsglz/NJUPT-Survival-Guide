@@ -6,9 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
-# 全局最小权限（跨仓库推送用 PAT secret，自身只读即可）
 permissions:
   contents: read
+  pages: write 
 
 concurrency:
   group: pages-deploy
@@ -18,11 +18,10 @@ jobs:
   shellcheck:
     name: ShellCheck 🛠
     runs-on: ubuntu-latest
-    # 仅在源码仓库运行（防护：若被 fork 改名）
     if: github.repository == 'NJUPT-NAVI/NJUPT-Survival-Guide'
     permissions:
       contents: read
-      security-events: write   # 允许 Code Scanning 上传结果（该 action 会用到）
+      security-events: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,22 +44,24 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Build (Astro)
         uses: withastro/action@v3
         with:
           node-version: 20
 
-      - name: Checkout target (pages repo)
-        uses: actions/checkout@v4
-        with:
-          repository: NJUPT-NAVI/njupt-navi.github.io
-          token: ${{ secrets.DEPLOY_REPO_TOKEN }}
-          path: target
-          fetch-depth: 0
+      - name: Verify token (optional)
+        run: |
+          curl -s -H "Authorization: token ${{ secrets.DEPLOY_REPO_TOKEN }}" \
+            https://api.github.com/repos/NJUPT-NAVI/njupt-navi.github.io | jq '.permissions'
 
       - name: Make sync script executable
         run: chmod +x scripts/sync-dist.sh
 
-      - name: Sync & publish
-        run: ./scripts/sync-dist.sh dist target
+      - name: Deploy
+        env:
+          DEPLOY_REPO_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
+        run: ./scripts/sync-dist.sh dist
