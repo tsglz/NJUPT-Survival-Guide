@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write         # 需要写权限推版本提交/标签
+  contents: write
   issues: write
   pull-requests: write
   security-events: write
@@ -57,7 +57,7 @@ jobs:
       released: ${{ steps.mark.outputs.released }}
       version:  ${{ steps.mark.outputs.version }}
     steps:
-      - name: Checkout (完整历史)
+      - name: Checkout
         uses: actions/checkout@v4
         with: { fetch-depth: 0 }
       - uses: actions/setup-node@v4
@@ -70,28 +70,35 @@ jobs:
         id: sr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release || echo "NO_RELEASE"
+        run: |
+          set -e
+          npx semantic-release || echo "NO_RELEASE"
       - name: 标记发布结果
         id: mark
         run: |
-          if git log -1 --pretty=%s | grep -q "^chore(release):"; then
-            ver=$(git log -1 --pretty=%s | sed -E 's/^chore\(release\): ([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+          set -e
+          msg="$(git log -1 --pretty=%s)"
+          if [[ "$msg" =~ ^chore\(release\):\ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
+            ver="${BASH_REMATCH[1]}"
             echo "released=true"  >> $GITHUB_OUTPUT
             echo "version=$ver"   >> $GITHUB_OUTPUT
           else
             echo "released=false" >> $GITHUB_OUTPUT
-            echo "version="       >> $GITHUB_OUTPUT
+            echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+          fi
+          echo "最后提交信息: $msg"
 
   build-and-deploy:
-    name: Build & Deploy (始终部署)
+    name: Build & Deploy (always)
     runs-on: ubuntu-latest
     needs: [release]
+    if: ${{ !cancelled() }}
     steps:
-      - name: Checkout 最新代码/标签
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-      - name: 同步可能的版本提交
+            fetch-depth: 0
+      - name: 同步远端
         run: |
           git fetch origin main --tags
           git checkout main
@@ -102,10 +109,7 @@ jobs:
           cache: npm
       - name: 安装依赖
         run: npm ci
-      - name: 读取版本
-        id: ver
-        run: echo "pkg_version=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
-      - name: 构建 (最终)
+      - name: 构建
         run: npm run build
       - name: 部署
         env:
@@ -113,5 +117,5 @@ jobs:
         run: ./scripts/sync-dist.sh dist
       - name: 输出信息
         run: |
-          echo "semantic-release触发: ${{ needs.release.outputs.released }}"
-          echo "版本号: ${{ steps.ver.outputs.pkg_version }}"
+          echo "是否产生新版本: ${{ needs.release.outputs.released }}"
+          echo "版本号: ${{ needs.release.outputs.version }}"
