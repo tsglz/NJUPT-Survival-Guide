@@ -12,5 +12,6 @@ commit_types:
   - refactor: changes the code without changing behavior
   - revert: reverts prior changes
 scopes:
-  - License: update license information
-  - Commit Convention: update commit convention configuration
+  - License: 证书
+  - Commit Convention: 提交规范
+  - GitHub Action: GitHub 工作流
