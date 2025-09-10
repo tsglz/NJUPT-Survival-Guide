@@ -11,34 +11,32 @@ CLONE_URL="https://x-access-token:${DEPLOY_REPO_TOKEN}@github.com/${TARGET_REPO}
 WORK_DIR="$(pwd)"
 TEMP_DIR="${WORK_DIR}/_deploy_temp"
 
-echo "[Info] Clone ${TARGET_REPO} -> ${TEMP_DIR}"
-rm -rf "${TEMP_DIR}"
-git clone --depth 1 "${CLONE_URL}" "${TEMP_DIR}"
+echo "[Info] 准备部署到 ${TARGET_REPO}"
 
-# 清空（保留 .git）
+rm -rf "${TEMP_DIR}"
+GIT_TERMINAL_PROMPT=0 git clone --depth 1 --quiet "${CLONE_URL}" "${TEMP_DIR}"
+
 cd "${TEMP_DIR}"
-# 删除除 .git 以外全部（处理隐藏文件）
+
+# 清空旧文件（保留 .git）
 find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
 
 # 拷贝新产物
-rsync -av "${WORK_DIR}/${DIST_DIR}/" "./"
+rsync -a "${WORK_DIR}/${DIST_DIR}/" "./"
 touch .nojekyll
 
-echo "[Debug] 文件数: $(find . -type f | wc -l)"
-git status --short || true
-
 if [[ -z "$(git status --porcelain)" ]]; then
-  echo "[Info] 无变化，结束。"
+  echo "[Info] 无变化，跳过提交。"
   exit 0
 fi
 
-git config user.name "Page Build"
-git config user.email "actions@users.noreply.github.com"
+git config user.name "github-actions[bot]"
+git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
 git add .
-git commit -m "Deploy: ${GITHUB_SHA:-manual}${GITHUB_SHA:+ }($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+git commit -m "Deploy: ${GITHUB_SHA:-manual} ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))" >/dev/null
 
-echo "[Info] Force push → main"
-git push -f origin HEAD:main
+# 强制推送最新快照
+GIT_TERMINAL_PROMPT=0 git push -f origin HEAD:main >/dev/null
 
 echo "[OK] 部署完成。"

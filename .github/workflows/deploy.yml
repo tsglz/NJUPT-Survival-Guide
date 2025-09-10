@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: read
-  pages: write 
 
 concurrency:
   group: pages-deploy
@@ -52,11 +51,6 @@ jobs:
         uses: withastro/action@v3
         with:
           node-version: 20
-
-      - name: Verify token (optional)
-        run: |
-          curl -s -H "Authorization: token ${{ secrets.DEPLOY_REPO_TOKEN }}" \
-            https://api.github.com/repos/NJUPT-NAVI/njupt-navi.github.io | jq '.permissions'
 
       - name: Make sync script executable
         run: chmod +x scripts/sync-dist.sh
