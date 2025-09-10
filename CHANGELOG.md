@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.0.0...v1.0.1) (2025-09-10)
+
+
+### Bug Fixes
+
+* **GitHub Action:** fix the id: mark ([0a01109](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/0a01109790c392da7e2f7284a5300935e7a2c9bd))
+
 # 1.0.0 (2025-09-10)
 
 
