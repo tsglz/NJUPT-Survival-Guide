@@ -4,8 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://astronaut.github.io',
-	base: '/',
+	site: 'https://njupt-navi.github.io',
 	integrations: [
 		starlight({
 			title: 'My Docs',
