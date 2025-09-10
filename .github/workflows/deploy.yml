@@ -21,8 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        with: { fetch-depth: 0 }
       - name: 🐚 Full ShellCheck
         uses: redhat-plumbers-in-action/differential-shellcheck@v5
         with:
@@ -80,13 +79,15 @@ jobs:
           msg="$(git log -1 --pretty=%s)"
           if [[ "$msg" =~ ^chore\(release\):\ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
             ver="${BASH_REMATCH[1]}"
-            echo "released=true"  >> $GITHUB_OUTPUT
-            echo "version=$ver"   >> $GITHUB_OUTPUT
+            echo "released=true"  >> "$GITHUB_OUTPUT"
+            echo "version=$ver"   >> "$GITHUB_OUTPUT"
           else
-            echo "released=false" >> $GITHUB_OUTPUT
-            echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+            ver=$(node -p "require('./package.json').version")
+            echo "released=false" >> "$GITHUB_OUTPUT"
+            echo "version=$ver"   >> "$GITHUB_OUTPUT"
           fi
           echo "最后提交信息: $msg"
+          echo "识别版本: $ver"
 
   build-and-deploy:
     name: Build & Deploy (always)
@@ -96,8 +97,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-            fetch-depth: 0
+        with: { fetch-depth: 0 }
       - name: 同步远端
         run: |
           git fetch origin main --tags
@@ -109,12 +109,14 @@ jobs:
           cache: npm
       - name: 安装依赖
         run: npm ci
+      - name: 赋予权限
+        run: chmod +x scripts/sync-dist.sh || true
       - name: 构建
         run: npm run build
       - name: 部署
         env:
           DEPLOY_REPO_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
-        run: ./scripts/sync-dist.sh dist
+        run: bash scripts/sync-dist.sh dist
       - name: 输出信息
         run: |
           echo "是否产生新版本: ${{ needs.release.outputs.released }}"
