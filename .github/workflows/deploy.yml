@@ -1,26 +1,24 @@
-name: Build & Publish to Root Pages Repo
+name: CI Release & Deploy
 
 on:
   push:
     branches: [ main ]
-  pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write         # 需要写权限推版本提交/标签
+  issues: write
+  pull-requests: write
+  security-events: write
 
 concurrency:
-  group: pages-deploy
+  group: main-ci
   cancel-in-progress: true
 
 jobs:
   shellcheck:
     name: ShellCheck 🛠
     runs-on: ubuntu-latest
-    if: github.repository == 'NJUPT-NAVI/NJUPT-Survival-Guide'
-    permissions:
-      contents: read
-      security-events: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,27 +33,85 @@ jobs:
           head: ${{ github.sha }}
           severity: error
 
-  build-and-deploy:
-    name: Build & Deploy
+  build-test:
+    name: Pre-Build 验证
     runs-on: ubuntu-latest
     needs: [shellcheck]
-    if: github.event_name != 'pull_request'
     steps:
-      - name: Checkout source
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: 安装依赖
+        run: npm ci
+      - name: 试构建
+        run: npm run build
+
+  release:
+    name: Semantic Release
+    runs-on: ubuntu-latest
+    needs: [build-test]
+    outputs:
+      released: ${{ steps.mark.outputs.released }}
+      version:  ${{ steps.mark.outputs.version }}
+    steps:
+      - name: Checkout (完整历史)
+        uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: 安装依赖
+        run: npm ci
+      - name: 运行 semantic-release
+        id: sr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release || echo "NO_RELEASE"
+      - name: 标记发布结果
+        id: mark
+        run: |
+          if git log -1 --pretty=%s | grep -q "^chore(release):"; then
+            ver=$(git log -1 --pretty=%s | sed -E 's/^chore\(release\): ([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+            echo "released=true"  >> $GITHUB_OUTPUT
+            echo "version=$ver"   >> $GITHUB_OUTPUT
+          else
+            echo "released=false" >> $GITHUB_OUTPUT
+            echo "version="       >> $GITHUB_OUTPUT
+
+  build-and-deploy:
+    name: Build & Deploy (始终部署)
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+      - name: Checkout 最新代码/标签
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
-
-      - name: Build (Astro)
-        uses: withastro/action@v3
+      - name: 同步可能的版本提交
+        run: |
+          git fetch origin main --tags
+          git checkout main
+          git reset --hard origin/main
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Make sync script executable
-        run: chmod +x scripts/sync-dist.sh
-
-      - name: Deploy
+          cache: npm
+      - name: 安装依赖
+        run: npm ci
+      - name: 读取版本
+        id: ver
+        run: echo "pkg_version=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
+      - name: 构建 (最终)
+        run: npm run build
+      - name: 部署
         env:
           DEPLOY_REPO_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
         run: ./scripts/sync-dist.sh dist
+      - name: 输出信息
+        run: |
+          echo "semantic-release触发: ${{ needs.release.outputs.released }}"
+          echo "版本号: ${{ steps.ver.outputs.pkg_version }}"
