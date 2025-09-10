@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.0.2...v1.1.0) (2025-09-10)
+
+
+### Features
+
+* **Commit Convention:** add Docs ([56bcf84](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/56bcf84ff9be3b04baabbd44ce52c572c26d94a2))
+* **Docs:** add 如何贡献 ([f7875f0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/f7875f06209c6ca8dec8814cbdbe366a30eac023))
+
 ## [1.0.2](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.0.1...v1.0.2) (2025-09-10)
 
 
