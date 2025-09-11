@@ -37,7 +37,7 @@ export default defineConfig({
           items: [
 			{ label: '欢迎小柚子', slug: 'freshman/welcome' },
             // 将 campus_introduction 这个目录作为一个组，并改中文标题
-            
+            { label: '新生报到', slug: 'freshman/checkin' },
 
             // 其他页面或分组，按顺序排放
             { label: '联络交通', slug: 'freshman/contact' },
