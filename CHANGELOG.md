@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.2.0...v1.3.0) (2025-09-11)
+
+
+### Bug Fixes
+
+* **astro config:** 手动控制目录 ([7d4b531](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/7d4b5318c8e704cf317ea026bfe495f58e5ed4f3))
+
+
+### Features
+
+* **components:** add img component ([5dcaa81](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/5dcaa8148cdab7a6d57bf3ce228d7d4649a5ef85))
+* **freshman:** 添加新生校区介绍框架 ([618b66f](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/618b66fc7c2898df07e1c91250eb8456b3ecf694))
+
 # [1.2.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.1.1...v1.2.0) (2025-09-11)
 
 
