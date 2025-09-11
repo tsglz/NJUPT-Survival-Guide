@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.1.1...v1.2.0) (2025-09-11)
+
+
+### Features
+
+* **Docs:** 把一些块修改为了超链接，加入了项目介绍 ([a72dba9](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/a72dba94ee3984ed1a5bb3391a5efd40e8e58e22))
+
 ## [1.1.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.1.0...v1.1.1) (2025-09-10)
 
 
