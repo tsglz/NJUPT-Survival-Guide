@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.3.0...v1.4.0) (2025-09-11)
+
+
+### Features
+
+* **freshman:** 增加了校区介绍框架，还有报到流程，加入地图 ([3fa8164](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/3fa816441e8166f366b186f196b480acae5ca030))
+
 # [1.3.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.2.0...v1.3.0) (2025-09-11)
 
 
