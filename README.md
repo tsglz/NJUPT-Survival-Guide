@@ -3,6 +3,7 @@
 
 
 ## 快速开始开发
+- 确保你已经安装了 [Node.js](https://nodejs.org/)（推荐版本`v18.20.8` 或 `v20.3.0`、`v22.0.0`） 和 [npm](https://www.npmjs.com/)。
 ```bash
 git clone https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide.git
 cd NJUPT-Survival-Guide
