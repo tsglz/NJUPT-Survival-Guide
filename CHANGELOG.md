@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.4.0...v1.5.0) (2025-09-12)
+
+
+### Features
+
+* 修改了一些链接，对仙林校区的宿舍介绍修改了文本 ([46dd326](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/46dd3261742f0471f311767aa3688eb221d03b14))
+
 # [1.4.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.3.0...v1.4.0) (2025-09-11)
 
 
