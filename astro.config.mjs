@@ -19,7 +19,7 @@ export default defineConfig({
 				src: './src/assets/logo.jpg',
 				replacesTitle: true,
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide' }],
 			sidebar: [
 				{
 					label: 'Guides',
