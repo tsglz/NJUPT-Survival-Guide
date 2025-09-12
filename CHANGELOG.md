@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.6.0...v1.6.1) (2025-09-12)
+
+
+### Bug Fixes
+
+* **Index:** 修复按钮LINK无效的问题 ([fdd06d4](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/fdd06d4d7c1852eb425662960159ef7d8b12bc73))
+
 # [1.6.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.5.0...v1.6.0) (2025-09-12)
 
 
