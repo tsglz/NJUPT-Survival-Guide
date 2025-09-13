@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.6.2...v1.7.0) (2025-09-13)
+
+
+### Features
+
+* **Commit Convention:** 怎加生活篇和学习篇文件夹 ([3ca180b](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/3ca180bc138861b6f828a3edf77f9ee7bef53937))
+* **Guides:** 增加学习篇，增加小团体导航 ([3abe10b](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/3abe10b036dcb44eb95a47a418d435772012c565))
+* **Life:** 增加校园网自动登录脚本 ([e41684b](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e41684bbd149628e005c274916dc90addf34f2ce))
+
 ## [1.6.2](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.6.1...v1.6.2) (2025-09-12)
 
 
