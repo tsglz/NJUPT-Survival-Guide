@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.7.1...v1.8.0) (2025-09-13)
+
+
+### Bug Fixes
+
+* **Freshman:** 修复一些路径问题 ([cd33da7](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/cd33da78327ba8ee6a1066842bded16bbfeea7f5))
+
+
+### Features
+
+* **Life:** 增加校车相关组件和页面 ([ee09071](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/ee090719f008a1655739c45b3fa56c3af45375ee))
+
 ## [1.7.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.7.0...v1.7.1) (2025-09-13)
 
 
