@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.7.0...v1.7.1) (2025-09-13)
+
+
+### Bug Fixes
+
+* **Freshman:** 对新增的快递站进行链接填充 ([748187d](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/748187d8322c619fd834579c834dffd5a8ffaa6f))
+
 # [1.7.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.6.2...v1.7.0) (2025-09-13)
 
 
