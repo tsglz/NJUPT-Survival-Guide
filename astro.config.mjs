@@ -48,11 +48,19 @@ export default defineConfig({
 				{
 					label: '生活篇',
 					items: [
+
 						{ label: '校园网相关', autogenerate: { directory: 'life/network' } },
 						{ label: '快递相关', autogenerate: { directory: 'life/express' } },
 						{ label: '校车时间地点', autogenerate: { directory: 'life/transportation/' } },
+						{ label: '学校周边设施', autogenerate: { directory: 'life/aroundschool' } },
+
+						
+								
+
 					],
 				},
+					
+				
 
 
 				/* {
