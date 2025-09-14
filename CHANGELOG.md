@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.8.0...v1.8.1) (2025-09-14)
+
+
+### Bug Fixes
+
+* **Guides:** 修复intro...md ，修复sidebar的笔误 ([4f0756f](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/4f0756f07eb393417f86351f133b7d85a20966f4))
+
 # [1.8.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.7.1...v1.8.0) (2025-09-13)
 
 
