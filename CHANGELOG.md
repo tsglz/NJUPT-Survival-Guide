@@ -1,3 +1,15 @@
+# [1.9.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.8.1...v1.9.0) (2025-09-14)
+
+
+### Bug Fixes
+
+* **Guides:** 删除并备份主页面未完成部分，intro更新可读 ([86b1d8a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/86b1d8a4d04868408faa75d2eb9c0ea2a47ec8f5))
+
+
+### Features
+
+* 替换为新的网站图标，左上角爱心图标背景透明 ([a366516](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/a3665167ed0e047e8ee527c1a036376cd11adc43))
+
 ## [1.8.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.8.0...v1.8.1) (2025-09-14)
 
 
