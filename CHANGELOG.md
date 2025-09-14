@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.9.0...v1.10.0) (2025-09-14)
+
+
+### Features
+
+* 增加贡献者组件 ([fdededf](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/fdededf6929712f909ee5ee57d088fe11b5c141a))
+
 # [1.9.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.8.1...v1.9.0) (2025-09-14)
 
 
