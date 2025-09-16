@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.13.0...v1.14.0) (2025-09-16)
+
+
+### Features
+
+* 更新Starlight集成标题并添加插件；新增Mermaid集成配置 ([54ae634](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/54ae634605b6fcce86f5808b2ba3ace269243189))
+
 # [1.13.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.12.0...v1.13.0) (2025-09-16)
 
 
