@@ -16,7 +16,8 @@ export default defineConfig({
   site: "https://njuptnavi.netlify.app",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "NJUPT-NAVI",
+      plugins: [starlightScrollToTop(), starlightImageZoom()],
       logo: {
         src: "./src/assets/logo_2.png",
         replacesTitle: true,
@@ -133,5 +134,9 @@ export default defineConfig({
         Pagination: "@components/Pagination.astro",
       },
     }),
+    mermaid({
+      theme: 'forest',
+      autoTheme: true
+    })
   ],
 });
