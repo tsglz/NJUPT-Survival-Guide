@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.10.0...v1.11.0) (2025-09-16)
+
+
+### Features
+
+* add record video website ([898ba4a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/898ba4a033469d4f0690eba5d5c29f02b16fc1cc))
+* add tingwu ([37daf40](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/37daf407f7595e7ac3a014fdb0123c319fcd8518))
+
 # [1.10.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.9.0...v1.10.0) (2025-09-14)
 
 
