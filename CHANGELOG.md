@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.11.0...v1.12.0) (2025-09-16)
+
+
+### Features
+
+* **ci:** 增加netlify的自动化部署 ([71938c3](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/71938c37fe9cbe2b273e26920dcfa1317de89cc3))
+
 # [1.11.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.10.0...v1.11.0) (2025-09-16)
 
 
