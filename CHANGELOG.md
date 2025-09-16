@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.12.0...v1.13.0) (2025-09-16)
+
+
+### Features
+
+* add netlify info ([edee021](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/edee02152852d32f7e75df3940c31a58e1915596))
+* add thanks ([e703727](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e703727210e317613cb1a3fc06534e950e1cbd9a))
+* **fix_network:** add 192.168.1.1 ([6364170](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/6364170012fc1105843c21937eaeefbaf86b5c39))
+
 # [1.12.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.11.0...v1.12.0) (2025-09-16)
 
 
