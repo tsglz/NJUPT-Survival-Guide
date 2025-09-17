@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.16.0...v1.17.0) (2025-09-17)
+
+
+### Features
+
+* add books resources ([782f91a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/782f91abc6aba2daf2d3a5bc00969b497f0c95fa))
+
 # [1.16.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.15.0...v1.16.0) (2025-09-17)
 
 
