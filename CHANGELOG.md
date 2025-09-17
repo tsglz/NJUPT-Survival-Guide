@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.14.0...v1.15.0) (2025-09-17)
+
+
+### Features
+
+* add kwgt ([5ae8472](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/5ae84722c79d7d2fcbf910f07b6d24607166b367))
+
 # [1.14.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.13.0...v1.14.0) (2025-09-16)
 
 
