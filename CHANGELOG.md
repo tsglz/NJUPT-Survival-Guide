@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.17.0...v1.18.0) (2025-09-17)
+
+
+### Features
+
+* **AI:** 增加慕雪编写的AI agent ([a8a1581](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/a8a1581a53c39fd008a33d6b2d75480e9eec9e72))
+
 # [1.17.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.16.0...v1.17.0) (2025-09-17)
 
 
