@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.18.0...v1.19.0) (2025-09-17)
+
+
+### Features
+
+* add support info about zlib ([f08cfd8](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/f08cfd854ec2ced95fdaaeefb261bea0b0226a3c))
+
 # [1.18.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.17.0...v1.18.0) (2025-09-17)
 
 
