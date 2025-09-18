@@ -73,6 +73,13 @@ export default defineConfig({
 
 					],
 				},
+				{
+					label: '学习篇',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: '借书', slug: 'learn/library/about_books' },
+					],
+				},
 					
 				
 
