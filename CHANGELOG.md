@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.20.1...v1.21.0) (2025-09-18)
+
+
+### Features
+
+* 修改侧面sidebar减少宽度 ([213d7d9](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/213d7d998d17a82870700bc55101805ec64bf7da))
+
 ## [1.20.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.20.0...v1.20.1) (2025-09-18)
 
 
