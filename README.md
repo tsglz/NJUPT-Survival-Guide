@@ -1,5 +1,16 @@
+<a href="https://njuptnavi.top/" target="_blank" rel="noopener noreferrer">
+  <img src="https://njuptnavi.top/_astro/NAVI.BMPlSeam_Z1QH86j.webp" width="300" height="304" alt="NapCat" align="right" />
+</a>
+<div align="center">
+
 # Njupt Survival Guide
-南京邮电大学生存指南，用于导航和整合各种公开的资源和信息，减少大家的信息差
+
+
+南京邮电大学生存指南，旨在导航和整合各种公开的资源和信息，减少大家的信息差
+</div>
+
+---
+
 
 
 ## 快速开始开发
@@ -24,6 +35,13 @@ npm run preview
 > [!IMPORTANT]
 > 请在执行编译之后才执行本地预览，否则会出现报错!
 
+
+## 链接
+| 网站 | [![Github.IO](https://img.shields.io/badge/WebSite-Netlify-orange)](https://njuptnavi.top/) | [![Cloudflare.Worker](https://img.shields.io/badge/WebSite-Github%20Pages-green)](https://njupt-navi.github.io/) 
+|:-:|:-:|:-:|
+
+| 群组 | [![GROUP](https://img.shields.io/badge/QQ%20Group-Join-blue)](https://qm.qq.com/q/2AVthOUvfy) 
+|:-:|:-:|
 
 ## 为本项目做贡献
 请参考[如何为本项目贡献](https://njupt-navi.github.io/contribution/contribution/)

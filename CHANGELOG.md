@@ -1,3 +1,69 @@
+# [1.19.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.18.0...v1.19.0) (2025-09-17)
+
+
+### Features
+
+* add support info about zlib ([f08cfd8](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/f08cfd854ec2ced95fdaaeefb261bea0b0226a3c))
+
+# [1.18.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.17.0...v1.18.0) (2025-09-17)
+
+
+### Features
+
+* **AI:** 增加慕雪编写的AI agent ([a8a1581](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/a8a1581a53c39fd008a33d6b2d75480e9eec9e72))
+
+# [1.17.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.16.0...v1.17.0) (2025-09-17)
+
+
+### Features
+
+* add books resources ([782f91a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/782f91abc6aba2daf2d3a5bc00969b497f0c95fa))
+
+# [1.16.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.15.0...v1.16.0) (2025-09-17)
+
+
+### Features
+
+* add windows and office activate script ([612cd95](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/612cd959fe784b79969ef9173d09c5420591c0ef))
+
+# [1.15.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.14.0...v1.15.0) (2025-09-17)
+
+
+### Features
+
+* add kwgt ([5ae8472](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/5ae84722c79d7d2fcbf910f07b6d24607166b367))
+
+# [1.14.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.13.0...v1.14.0) (2025-09-16)
+
+
+### Features
+
+* 更新Starlight集成标题并添加插件；新增Mermaid集成配置 ([54ae634](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/54ae634605b6fcce86f5808b2ba3ace269243189))
+
+# [1.13.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.12.0...v1.13.0) (2025-09-16)
+
+
+### Features
+
+* add netlify info ([edee021](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/edee02152852d32f7e75df3940c31a58e1915596))
+* add thanks ([e703727](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e703727210e317613cb1a3fc06534e950e1cbd9a))
+* **fix_network:** add 192.168.1.1 ([6364170](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/6364170012fc1105843c21937eaeefbaf86b5c39))
+
+# [1.12.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.11.0...v1.12.0) (2025-09-16)
+
+
+### Features
+
+* **ci:** 增加netlify的自动化部署 ([71938c3](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/71938c37fe9cbe2b273e26920dcfa1317de89cc3))
+
+# [1.11.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.10.0...v1.11.0) (2025-09-16)
+
+
+### Features
+
+* add record video website ([898ba4a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/898ba4a033469d4f0690eba5d5c29f02b16fc1cc))
+* add tingwu ([37daf40](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/37daf407f7595e7ac3a014fdb0123c319fcd8518))
+
 # [1.10.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.9.0...v1.10.0) (2025-09-14)
 
 
