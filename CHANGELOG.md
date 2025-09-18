@@ -1,3 +1,11 @@
+# [1.20.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.19.0...v1.20.0) (2025-09-18)
+
+
+### Features
+
+* **Package:** 添加partytown用于异步执行GA代码 ([9999f5c](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/9999f5c279b16cde2169156ecc931f422f6995f3))
+* 增加百度统计的GA ([f2f0c53](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/f2f0c536ba9b616c1724f6fd13e48fd3397b22e7))
+
 # [1.19.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.18.0...v1.19.0) (2025-09-17)
 
 
