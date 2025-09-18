@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.20.0...v1.20.1) (2025-09-18)
+
+
+### Bug Fixes
+
+* 解决 Partytown 的CORS跨域问题 ([3626e61](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/3626e6164297e80eb68807743fc715417d4075fe))
+
 # [1.20.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.19.0...v1.20.0) (2025-09-18)
 
 
