@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.21.0...v1.22.0) (2025-09-19)
+
+
+### Bug Fixes
+
+* **Learn:** 完善小爱课表介绍 ([bf82494](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/bf824942d010127329a6f6a198746b1119ca0ef7))
+
+
+### Features
+
+* **learn:** 增加课表简单描述 ([b755b64](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/b755b647ee75755d474dad4c0ddd5ada65618a0d))
+
 # [1.21.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.20.1...v1.21.0) (2025-09-18)
 
 
