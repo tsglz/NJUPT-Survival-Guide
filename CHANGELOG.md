@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.22.0...v1.22.1) (2025-09-19)
+
+
+### Bug Fixes
+
+* **Contribution:** stackblitz增加全屏按钮 ([63f8ca8](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/63f8ca82153d70e55e98e94f1990447c3409d63f))
+
 # [1.22.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.21.0...v1.22.0) (2025-09-19)
 
 
