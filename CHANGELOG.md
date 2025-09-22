@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.0...v1.24.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* **GitHub Action:** 对netlify的部署放置在自动化触发ci，现在是测试 ([b084797](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/b08479730ed8a72e956496c44aaa7588294838b6))
+
 # [1.24.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.23.0...v1.24.0) (2025-09-22)
 
 
