@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.23.0...v1.24.0) (2025-09-22)
+
+
+### Features
+
+* add stfw ([6baa1f8](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/6baa1f8445378e6a59915e25cdbef44251e613a0))
+
 # [1.23.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.22.1...v1.23.0) (2025-09-22)
 
 
