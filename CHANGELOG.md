@@ -1,3 +1,10 @@
+## [1.24.2](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.1...v1.24.2) (2025-09-22)
+
+
+### Bug Fixes
+
+* **GitHub Action:** 修改触发时间为北京时间06:00 ([952d5ff](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/952d5ff50ba97d7e1f2047e7226996b4425bb7d6))
+
 ## [1.24.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.0...v1.24.1) (2025-09-22)
 
 
