@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.2...v1.25.0) (2025-09-22)
+
+
+### Features
+
+* 怎加algolia搜索 ([15884e7](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/15884e72d9436ccdde357d77b1de4826e366b077))
+
 ## [1.24.2](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.1...v1.24.2) (2025-09-22)
 
 
