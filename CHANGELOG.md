@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.22.1...v1.23.0) (2025-09-22)
+
+
+### Features
+
+*  增加c/c++开发环境介绍 ([#73](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/issues/73)) ([176009a](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/176009a229d51e196154623374464f211b2de24e))
+
 ## [1.22.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.22.0...v1.22.1) (2025-09-19)
 
 
