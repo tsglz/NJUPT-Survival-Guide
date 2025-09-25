@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.25.0...v1.26.0) (2025-09-25)
+
+
+### Features
+
+* 增加学生事务中心 和 晨跑相关 ([6930529](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/6930529d4733f787d4784bfbdd8c13d5bfecbb2b))
+
 # [1.25.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.24.2...v1.25.0) (2025-09-22)
 
 
