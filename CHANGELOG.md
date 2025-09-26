@@ -1,3 +1,11 @@
+# [1.28.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.27.0...v1.28.0) (2025-09-26)
+
+
+### Features
+
+* 优化结构和添加目录 ([e4aa332](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e4aa33287ab842aff4279d4ba36e562e336c69be))
+* 添加在github上编辑此页组件 ([e0e3ae5](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e0e3ae5b456d0f53494396c816b5fbd16e6d41e7))
+
 # [1.27.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.26.0...v1.27.0) (2025-09-26)
 
 
