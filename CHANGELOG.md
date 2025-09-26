@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.26.0...v1.27.0) (2025-09-26)
+
+
+### Features
+
+* add AI_useful ([839409c](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/839409c2829f5faad1f71c619ee87ccc87d23bbc))
+
 # [1.26.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.25.0...v1.26.0) (2025-09-25)
 
 
