@@ -1,3 +1,11 @@
+# [1.29.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.28.0...v1.29.0) (2025-09-30)
+
+
+### Features
+
+* Add common sense lessons of computer ([7148388](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/71483889ce9c13c560179b1a89222c02ac5afe35))
+* 新增操作系统进阶使用 ([e59b2fa](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/e59b2fab40514c0d6bb0d9692bca65b09db0dd57))
+
 # [1.28.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.27.0...v1.28.0) (2025-09-26)
 
 
