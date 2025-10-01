@@ -1,3 +1,28 @@
+# [1.1.0](https://github.com/tsglz/NJUPT-Survival-Guide/compare/v1.0.0...v1.1.0) (2025-10-01)
+
+
+### Bug Fixes
+
+* **Astro Config:** 修改algolia爬虫到www.* ([91b9d92](https://github.com/tsglz/NJUPT-Survival-Guide/commit/91b9d92b95ba05322e8a59cb9537308087b21cac))
+* **Contribution:** stackblitz增加全屏按钮 ([63f8ca8](https://github.com/tsglz/NJUPT-Survival-Guide/commit/63f8ca82153d70e55e98e94f1990447c3409d63f))
+* **GitHub Action:** 修改触发时间为北京时间06:00 ([952d5ff](https://github.com/tsglz/NJUPT-Survival-Guide/commit/952d5ff50ba97d7e1f2047e7226996b4425bb7d6))
+* **GitHub Action:** 对netlify的部署放置在自动化触发ci，现在是测试 ([b084797](https://github.com/tsglz/NJUPT-Survival-Guide/commit/b08479730ed8a72e956496c44aaa7588294838b6))
+* **Learn:** 完善小爱课表介绍 ([bf82494](https://github.com/tsglz/NJUPT-Survival-Guide/commit/bf824942d010127329a6f6a198746b1119ca0ef7))
+
+
+### Features
+
+*  增加c/c++开发环境介绍 ([#73](https://github.com/tsglz/NJUPT-Survival-Guide/issues/73)) ([176009a](https://github.com/tsglz/NJUPT-Survival-Guide/commit/176009a229d51e196154623374464f211b2de24e))
+* add AI_useful ([839409c](https://github.com/tsglz/NJUPT-Survival-Guide/commit/839409c2829f5faad1f71c619ee87ccc87d23bbc))
+* Add common sense lessons of computer ([7148388](https://github.com/tsglz/NJUPT-Survival-Guide/commit/71483889ce9c13c560179b1a89222c02ac5afe35))
+* add stfw ([6baa1f8](https://github.com/tsglz/NJUPT-Survival-Guide/commit/6baa1f8445378e6a59915e25cdbef44251e613a0))
+* **learn:** 增加课表简单描述 ([b755b64](https://github.com/tsglz/NJUPT-Survival-Guide/commit/b755b647ee75755d474dad4c0ddd5ada65618a0d))
+* 优化结构和添加目录 ([e4aa332](https://github.com/tsglz/NJUPT-Survival-Guide/commit/e4aa33287ab842aff4279d4ba36e562e336c69be))
+* 增加学生事务中心 和 晨跑相关 ([6930529](https://github.com/tsglz/NJUPT-Survival-Guide/commit/6930529d4733f787d4784bfbdd8c13d5bfecbb2b))
+* 怎加algolia搜索 ([15884e7](https://github.com/tsglz/NJUPT-Survival-Guide/commit/15884e72d9436ccdde357d77b1de4826e366b077))
+* 新增操作系统进阶使用 ([e59b2fa](https://github.com/tsglz/NJUPT-Survival-Guide/commit/e59b2fab40514c0d6bb0d9692bca65b09db0dd57))
+* 添加在github上编辑此页组件 ([e0e3ae5](https://github.com/tsglz/NJUPT-Survival-Guide/commit/e0e3ae5b456d0f53494396c816b5fbd16e6d41e7))
+
 # 1.0.0 (2025-09-19)
 ## [1.29.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.29.0...v1.29.1) (2025-10-01)
 
