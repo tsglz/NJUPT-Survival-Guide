@@ -4,6 +4,7 @@ import mermaid from 'astro-mermaid';
 import { defineConfig } from "astro/config";
 import starlightImageZoom from 'starlight-image-zoom';
 import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightDocSearch from '@astrojs/starlight-docsearch';
 //import partytown from '@astrojs/partytown';
 
 
@@ -20,8 +21,14 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "NJUPT-NAVI",
-      plugins: [starlightScrollToTop(), starlightImageZoom()],
-       customCss: [
+      plugins: [
+        starlightScrollToTop(),
+        starlightImageZoom(),
+        starlightDocSearch({
+          clientOptionsModule: './src/config/docsearch.ts',
+        }),
+      ],
+      customCss: [
         // 你的自定义 CSS 文件的相对路径
         '@assets/css/color.css',
       ],
@@ -38,7 +45,7 @@ export default defineConfig({
         {
           icon: "comment",
           label: "Group",
-          href: "https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide",
+          href: "https://qm.qq.com/q/FmUTUm6osG",
         },
       ],
 
@@ -91,6 +98,17 @@ export default defineConfig({
               autogenerate: { directory: "life/network" },
             },
             {
+              label: "校园活动",
+              collapsed: true,
+              items: [
+                {
+                  label: "晨跑", items: [
+                    { label: "仙林校区", slug: "life/even/morning_jog/xianlin" },
+                  ]
+                },
+              ],
+            },
+            {
               label: "快递相关",
               collapsed: true,
               autogenerate: { directory: "life/express" }
@@ -106,15 +124,34 @@ export default defineConfig({
               autogenerate: { directory: "life/transportation/" },
             },
             {
-              label: "学校周边设施",
+              label: "学校设施",
               collapsed: true,
-              autogenerate: { directory: "life/aroundschool" },
+              //autogenerate: { directory: "life/aroundschool" },
+              items: [
+                { label: "学生事务中心", slug: "life/aroundschool/service_center" },
+                // 将 campus_introduction 这个目录作为一个组，并改中文标题
+                { label: "仙林校区周边设施", slug: "life/aroundschool/xianlin" },
+
+
+                {
+                  label: "学校服务",
+                  collapsed: true,
+                  autogenerate: { directory: "life/aroundschool/service" },
+                },
+
+
+              ],
             },
           ],
         },
         {
           label: "学习篇",
           items: [
+              {
+                  label: "电脑相关",
+                  collapsed: true,
+                  autogenerate: {directory: "learn/computer/"},
+              },
             {
               label: "编程语言",
               collapsed: true,
@@ -125,8 +162,13 @@ export default defineConfig({
                   autogenerate: { directory: "learn/AI" },
                 },
                 {
-                  label: "C 语言",
+                  label: "开发环境",
 
+                  autogenerate: { directory: "learn/program/env/" },
+                },
+                {
+                  label: "C 语言",
+                  collapsed: true,
                   autogenerate: { directory: "learn/program/c/" },
                 },
 
@@ -145,7 +187,32 @@ export default defineConfig({
             {
               label: "实用工具",
               collapsed: true,
-              autogenerate: { directory: "learn/useful_tools" },
+              items: [
+                {
+                  label: "课表",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "小爱课表",
+
+                      slug: "learn/useful_tools/curriculum/xiaoai",
+                    },
+                    {
+                      label: "kwgt 固定课表",
+
+                      slug: "learn/useful_tools/curriculum/kwgt",
+                    },
+
+
+                  ],
+                },
+
+                { label: "PotPlay 播放器", slug: "learn/useful_tools/potplayer" },
+                { label: "Windows 和 Office 激活", slug: "learn/useful_tools/win_acti" },
+                { label: "浏览器使用", slug: "learn/useful_tools/stfw" },
+
+
+              ]
             },
             {
               label: "科研篇",
@@ -184,16 +251,17 @@ export default defineConfig({
       components: {
         Pagination: "@components/Pagination.astro",
         Head: "@components/Head.astro", // 全局替换 Head
+        EditLink: './src/components/Editor.astro',
       },
     }),
     mermaid({
       theme: 'forest',
       autoTheme: true
     }),
-/*     partytown({
-      config: {
-        debug: true
-      }
-    }), // 启用 Partytown 集成 */
+    /*     partytown({
+          config: {
+            debug: true
+          }
+        }), // 启用 Partytown 集成 */
   ],
 });
