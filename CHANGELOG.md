@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.29.0...v1.29.1) (2025-10-01)
+
+
+### Bug Fixes
+
+* **Astro Config:** 修改algolia爬虫到www.* ([91b9d92](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/91b9d92b95ba05322e8a59cb9537308087b21cac))
+
 # [1.29.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.28.0...v1.29.0) (2025-09-30)
 
 
