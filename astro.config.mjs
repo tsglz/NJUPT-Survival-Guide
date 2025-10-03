@@ -214,6 +214,11 @@ export default defineConfig({
 
               ]
             },
+            {
+              label: "科研篇",
+              collapsed: true,
+              autogenerate: { directory: "learn/scientific-research" },
+            },
           ],
         },
 
@@ -227,12 +232,16 @@ export default defineConfig({
           items: [
             { label: "如何为本仓库贡献", slug: "contribution/contribution" },
 
-            { label: "项目贡献约定", slug: "contribution/conventions" },
-
-            { label: "编写内容更改申请", slug: "contribution/apply" },
-
-            { label: "快速上手", slug: "contribution/quickstart" },
           ],
+        },
+        {
+          label: "项目贡献约定", slug: "contribution/conventions",
+        },
+        {
+          label: "编写内容更改申请", slug: "contribution/apply",
+        },
+        {
+          label: "快速上手", slug: "contribution/quickstart",
         },
         {
           label: "License",
