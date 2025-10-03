@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/compare/v1.29.1...v1.30.0) (2025-10-03)
+
+
+### Features
+
+* 修改主域名相关，增加robots.txt ([#87](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/issues/87)) ([03d1e92](https://github.com/NJUPT-NAVI/NJUPT-Survival-Guide/commit/03d1e9288989762481473ee8a908e7cb8b2a2945))
+
 # [1.1.0](https://github.com/tsglz/NJUPT-Survival-Guide/compare/v1.0.0...v1.1.0) (2025-10-01)
 
 
